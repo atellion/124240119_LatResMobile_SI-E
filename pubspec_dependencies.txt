@@ -1,0 +1,10 @@
+# Tambahkan lewat terminal (di folder project):
+flutter pub add http shared_preferences url_launcher
+
+# Hasilnya di pubspec.yaml kira-kira:
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.6.0
+  shared_preferences: ^2.3.0
+  url_launcher: ^6.3.0

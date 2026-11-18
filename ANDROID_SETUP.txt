@@ -1,0 +1,12 @@
+android/app/src/main/AndroidManifest.xml
+
+1) Di dalam <manifest>, SEBELUM <application>, tambahkan izin internet:
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+2) Masih di dalam <manifest>, SESUDAH </application>, tambahkan (untuk url_launcher):
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
